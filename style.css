@@ -25,10 +25,8 @@ a {
 
 .seta.ativar .resposta {
     display: block;
-    background-color: #0076c5;
-
-
-
+    background-color: rgb(244, 240, 240);
+    padding: 5px;
 }
 
 /* .hideen {
@@ -157,7 +155,7 @@ input:checked~label .hamburguer::after {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    font-size: 18px;
+    font-size: 20px;
     max-width: 100%;
 }
 
@@ -225,25 +223,27 @@ main img {
     align-items: center;
     font-size: 25px;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .quero-conhecer {
     max-width: 500px;
     max-height: 500px;
+    text-align: justify;
 }
 
 .quero-conhecer p {
     font-size: 18px;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     min-width: 300px;
 
 }
 
 .quero-conhecer a {
     border-radius: 20px;
-    padding: 8px 20px;
-    background-color: rgb(17, 241, 17);
+    padding: 11px 20px;
+    background-color: #00bf91;
     font-size: 20px;
     width: 100%;
 }
@@ -251,7 +251,9 @@ main img {
 .imagem-sobre {
     max-width: 800px;
     max-height: 800px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagem-sobre img {
@@ -278,7 +280,6 @@ main img {
 .lista-de-funcionalidades {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 80px;
     margin-bottom: 80px;
     flex-wrap: wrap;
@@ -286,12 +287,15 @@ main img {
 
 
 .lista-de-funcionalidades li {
-    gap: 15px;
-    padding: 10px;
+    margin: 10px;
     text-align: center;
     max-width: 300px;
     margin-bottom: 100px;
+    min-width: 205px;
+    min-height: 230px;
+
 }
+
 
 .lista-de-funcionalidades li h3 {
     margin-top: 10px;
@@ -315,11 +319,22 @@ main img {
     justify-content: center;
     margin-top: 150px;
     flex-wrap: wrap;
+    margin: 30px;
 }
 
 .fazendo-item {
-    margin-top: 40px;
-    max-width: 500px;
+    margin: 15px 0 1px 10px ;
+    width: 100%;
+}
+
+.fazendo-item p{
+    max-width:450px ;
+}
+
+
+.fazendo .fazendo-cotainer{
+    max-height: 660px;
+    max-width: 450px;
 }
 
 .fazendo-item img {
@@ -494,6 +509,7 @@ main img {
     flex-direction: column;
     gap: 15px;
     align-self: center;
+    margin: 20px;
 }
 
 .seta p {
@@ -503,13 +519,13 @@ main img {
 
 .duvidas li {
     border-radius: 3px;
-    border: solid 2px #0076c5;
+    background-color: #0076c5;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     padding: 5px;
     flex-direction: column;
-    background: url(./src/image/expandir.png) no-repeat right top;
+    background: url(./src/image/expandir.png) no-repeat right top #0076c5;
     max-width: 500px;
 }
 
@@ -534,12 +550,11 @@ main img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80PX;
     background-color: white;
     color: black;
     border-radius: 10px;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin: 80px;
 }
 
 .comentario {
@@ -577,14 +592,12 @@ main img {
     align-items: center;
     text-align: center;
     max-width: 300px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .lista-de-contatos {
     display: flex;
     justify-content: center;
-    margin-left: 100px;
-    margin-right: 100px;
     margin-top: 80px;
     flex-wrap: wrap;
     gap: 25px
@@ -592,8 +605,9 @@ main img {
 
 .form-mapa {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 50px;
 }
 
 .form-mapa h3 {
@@ -609,6 +623,8 @@ main img {
     width: 400px;
     height: 375px;
     margin-bottom: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .form-mapa div iframe {
@@ -621,7 +637,7 @@ form {
     flex-direction: column;
     width: 400px;
     gap: 5px;
-    margin-bottom: 100px;
+    margin: 80px;
 }
 
 .name {
