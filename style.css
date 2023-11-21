@@ -222,7 +222,7 @@ main img {
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    margin: 50px;
+
     margin-bottom: 100px;
 }
 
@@ -299,11 +299,6 @@ main img {
 .lista-de-funcionalidades li h3 {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.funcoes {
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 
@@ -425,7 +420,6 @@ main img {
     gap: 15px;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .planos li {
@@ -513,8 +507,8 @@ main img {
 }
 
 .seta p {
-    padding: 2px;
-    font-size: 20px;
+    padding: 3px;
+    font-size: 1rem  ;
 }
 
 .duvidas li {
@@ -682,7 +676,7 @@ footer div {
 
 footer p {
     margin-right: 30px;
-
+    font-size: 12px;
 }
 
 .rodape img {

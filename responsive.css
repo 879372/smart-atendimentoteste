@@ -1,4 +1,8 @@
 @media (max-width: 900px) {
+
+    body{
+        font-size: 1rem;
+    }
     .lmenu {
         display: block;
     }
@@ -126,6 +130,10 @@
         text-align: center;
     }
 
+    footer p{
+        margin-right: 0px;
+    }
+
     footer img {
         margin-top: 5px;
     }
@@ -154,7 +162,7 @@
 
     .quero-conhecer{
         font-size: 16px;
-        margin: 50px;
+        margin: 5px;
         max-width: 300px;
     }
 
@@ -162,9 +170,20 @@
         margin-bottom: 50px;
  
     }
+    
+    .fazendo{
+        text-align: center;
+    }
 
     .fazendo-item{
         font-size: 16px;
+        margin: 20px 10px 20px 10px;
+        
+    }
+
+    .fazendo-item img{
+        float: none;
+        margin: 0;
     }
 
     .lista-de-contatos{

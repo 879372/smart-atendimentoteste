@@ -11,6 +11,19 @@ window.addEventListener("scroll", function () {
 
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.hideen', { duration: 2000 });
+sr.reveal('.logo-menu', { duration: 2500 });
+sr.reveal('.image-desktop', { duration: 2500 });
+sr.reveal( '.sobre', { duration: 2000 });
+sr.reveal('.informacoes-sobre', { duration: 2000 });
+sr.reveal('.funcoes', { duration: 2000 });
+sr.reveal('.fazendo-container', { duration: 2000 });
+sr.reveal('.nossa-plataforma', { duration: 2000 });
+sr.reveal('.carousel-container', { duration: 3000 });
+sr.reveal('.como-funciona', { duration: 2000 });
+sr.reveal('.YouTube', { duration: 2000 });
+sr.reveal('.image-fazendo', { duration: 2000 });
+sr.reveal('.image-fazendo', { duration: 2000 });
+sr.reveal('.image-fazendo', { duration: 2000 });
 
 let currentIndex = 0;
 
