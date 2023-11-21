@@ -1,19 +1,8 @@
-
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 700) { // Defina a quantidade de rolagem necessária para mostrar o cabeçalho
-    document.querySelector(".logo").classList.add("esconder")
-    document.querySelector(".header").classList.add("esconder")
-  } else {
-    document.querySelector(".logo").classList.remove("esconder")
-    document.querySelector(".header").classList.remove("esconder")
-  }
-});
-
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.hideen', { duration: 2000 });
 sr.reveal('.logo-menu', { duration: 2500 });
 sr.reveal('.image-desktop', { duration: 2500 });
-sr.reveal( '.sobre', { duration: 2000 });
+sr.reveal('.sobre', { duration: 2000 });
 sr.reveal('.informacoes-sobre', { duration: 2000 });
 sr.reveal('.funcoes', { duration: 2000 });
 sr.reveal('.fazendo-container', { duration: 2000 });
@@ -24,6 +13,16 @@ sr.reveal('.YouTube', { duration: 2000 });
 sr.reveal('.image-fazendo', { duration: 2000 });
 sr.reveal('.image-fazendo', { duration: 2000 });
 sr.reveal('.image-fazendo', { duration: 2000 });
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 700) {
+    document.querySelector(".logo").style.display = "flex"
+    document.querySelector(".header").classList.add("esconder")
+  } else {
+    document.querySelector(".logo").style.display = "none"
+    document.querySelector(".header").classList.remove("esconder")
+  }
+});
 
 let currentIndex = 0;
 
@@ -45,7 +44,6 @@ function showSlide(index) {
   slides.style.transform = 'translateX(' + translateValue + ')';
 }
 
-// Automatic slideshow
 setInterval(function () {
   changeSlide(1);
 }, 3000);
@@ -59,12 +57,21 @@ Itens.forEach(function (item) {
       itemAtivo.classList.remove('ativar');
     }
 
-    item.classList.add('ativar');
 
+    item.classList.add('ativar');
   })
 })
 
+const opcoes = document.querySelectorAll('.opcao')
 
+opcoes.forEach(function (opcao) {
+  opcao.addEventListener("click", function () {
+    const Input = document.querySelector('.checkbox');
+    if (Input) {
+      Input.checked = false;
+    }
+  })
+})
 
 
 

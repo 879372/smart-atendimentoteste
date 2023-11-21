@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #0076c5;
+}
+
+.resposta {
+    display: none;
+
+}
+
+.active {
+    opacity: 1;
+}
+
+.esconder {
+    background-color: #ffffff;
+    display: flex;
+}

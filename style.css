@@ -1,136 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-size: 20px;
-}
-
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #0076c5;
-}
-
-.resposta {
-    display: none;
-
-}
-
-.seta.ativar .resposta {
-    display: block;
-    background-color: rgb(244, 240, 240);
-    padding: 5px;
-}
-
-/* .hideen {
-    visibility: hidden;
-} */
-
-.active {
-    opacity: 1;
-}
-
-.header .checkbox {
-    display: none;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    z-index: 9999;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-}
-
-.bnt-menu {
-    display: none;
-}
-
-
-.lmenu {
-    display: none;
-    width: 60px;
-    height: 60px;
-    align-self: flex-end;
-}
-
-nav label {
-    display: flex;
-    flex-direction: column;
-}
-
-.hamburguer {
-    background-color: black;
-    position: relative;
-    display: block;
-    width: 30px;
-    height: 2px;
-    top: 29px;
-    left: 15px;
-    transition: 0.5s ease-in-out;
-}
-
-.hamburguer::before,
-.hamburguer::after {
-    background-color: #000;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: 0.2s ease-in-out;
-}
-
-.hamburguer::before {
-    top: -10px;
-}
-
-.hamburguer::after {
-    bottom: -10px;
-}
-
-input:checked~label .hamburguer {
-    transform: rotate(45deg);
-}
-
-input:checked~label .hamburguer::before {
-    transform: rotate(90deg);
-    top: 0;
-}
-
-input:checked~label .hamburguer::after {
-    transform: rotate(90deg);
-    bottom: 0;
-}
-
-
-.logo {
-    display: none;
-    max-width: 200px;
-    max-height: 200px;
-}
-
-.logo img {
-    width: 100%;
-
-}
-
-.esconder {
-    background-color: #ffffff;
-    display: flex;
-}
-
 .logo-menu {
     text-align: center;
     margin-top: 100px;
@@ -149,27 +16,6 @@ input:checked~label .hamburguer::after {
     max-width: 500px;
 }
 
-
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    font-size: 20px;
-    max-width: 100%;
-}
-
-.menu li a {
-    padding: 10px;
-}
-
-.menu li a:hover {
-    color: white;
-    background-color: #0076c5;
-    transition: 0.05s;
-    border-radius: 10px
-}
-
 main {
     display: flex;
     justify-content: center;
@@ -184,7 +30,6 @@ main {
     max-width: 700px;
     max-height: 700px;
 }
-
 
 main img {
     width: 100%;
@@ -221,7 +66,6 @@ main img {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
 
     margin-bottom: 100px;
 }
@@ -230,11 +74,10 @@ main img {
     max-width: 500px;
     text-align: justify;
     min-width: 350px;
-
+    margin-right: 30px;
 }
 
 .quero-conhecer p {
-    font-size: 18px;
     margin-top: 15px;
     margin-bottom: 20px;
 }
@@ -277,14 +120,12 @@ main img {
     margin-top: 80px;
 }
 
-
 .lista-de-funcionalidades {
     display: flex;
     justify-content: center;
     margin-top: 80px;
     margin-bottom: 80px;
 }
-
 
 .lista-de-funcionalidades li {
     margin: 10px;
@@ -295,12 +136,10 @@ main img {
     min-height: 230px;
 }
 
-
 .lista-de-funcionalidades li h3 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 
 .como-fazer {
     display: flex;
@@ -325,7 +164,6 @@ main img {
     max-width:450px ;
 }
 
-
 .fazendo .fazendo-cotainer{
     max-height: 660px;
     max-width: 450px;
@@ -344,6 +182,46 @@ main img {
 
 .image-fazendo img {
     max-width: 100%;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    max-height: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.carousel-slide img {
+    width: 100%;
+}
+
+.seta1 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.seta2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .section4 {
@@ -397,7 +275,6 @@ main img {
     margin-top: 80px;
 }
 
-
 .section6 {
     background-color: rgb(244, 240, 240);
 }
@@ -449,7 +326,6 @@ main img {
     line-height: 30px;
 }
 
-
 .planos li a {
     border: solid 2px #00bf91;
     padding: 8px 40px;
@@ -474,11 +350,6 @@ main img {
     flex-direction: column;
     margin-top: 80px;
     margin-bottom: 50px;
-}
-
-.seta-selecionada {
-    display: block;
-    transform: rotate(180deg);
 }
 
 .perguntas {
@@ -506,9 +377,14 @@ main img {
     margin: 20px;
 }
 
+.seta.ativar .resposta {
+    display: block;
+    background-color: rgb(244, 240, 240);
+    padding: 5px;
+}
+
 .seta p {
     padding: 3px;
-    font-size: 1rem  ;
 }
 
 .duvidas li {
@@ -538,7 +414,6 @@ main img {
 .feedback h2 {
     margin-top: 80px;
 }
-
 
 .elogio {
     display: flex;
@@ -616,11 +491,12 @@ main img {
 }
 
 .form-mapa div {
-    width: 400px;
-    height: 375px;
+    max-width: 500px;
+    max-height: 375px;
     margin-bottom: 150px;
     margin-left: 10px;
     margin-right: 10px;
+    margin: 50px;
 }
 
 .form-mapa div iframe {
@@ -633,6 +509,7 @@ form {
     flex-direction: column;
     width: 400px;
     gap: 5px;
+    margin: 50px;
 }
 
 .name {
@@ -673,7 +550,6 @@ footer div {
     margin-left: 30px;
 }
 
-
 footer p {
     margin-right: 30px;
     font-size: 12px;
@@ -681,46 +557,4 @@ footer p {
 
 .rodape img {
     margin-right: 10px;
-
-}
-
-
-.carousel-container {
-    position: relative;
-    max-width: 800px;
-    max-height: 800px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.carousel-slide {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-
-}
-
-.carousel-slide img {
-    width: 100%;
-}
-
-.seta1 {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.seta2 {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
 }

@@ -1,0 +1,100 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.header .checkbox {
+    display: none;
+}
+
+.lmenu {
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+nav label {
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburguer {
+    background-color: black;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    background-color: #000;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.hamburguer::before {
+    top: -10px;
+}
+
+.hamburguer::after {
+    bottom: -10px;
+}
+
+input:checked~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+input:checked~label .hamburguer::before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+input:checked~label .hamburguer::after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+.logo {
+    display: none;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 100%;
+}
+
+.menu li a {
+    padding: 10px;
+}
+
+.menu li a:hover {
+    color: white;
+    background-color: #0076c5;
+    transition: 0.05s;
+    border-radius: 10px
+}
