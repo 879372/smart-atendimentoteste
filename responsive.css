@@ -1,8 +1,4 @@
 @media (max-width: 900px) {
-
-    body{
-        font-size: 1rem;
-    }
     .lmenu {
         display: block;
     }
@@ -45,8 +41,6 @@
         margin-top: 150px;
         max-height: 250px;
         min-height: none;
-        min-width: none;
-
     }
 
     .logo-menu a {
@@ -115,12 +109,25 @@
     }
 
     .image-fazendo{
-        margin-top: 80px;
+        margin-top: 50px;
     }
 
+    .section3{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fazendo-item p{
+        min-width: 100px;
+    }
+    
 }
 
 @media (max-width: 800px) {
+    main{
+        background: url('./src/image/fundo2.jpg') no-repeat fixed;
+        background-size: cover;
+    }
     .como-funciona div {
         width: 459px;
         height: 271px;
@@ -143,10 +150,22 @@
         max-width: 400px;
 
     }
+
+    .logo-menu a {
+        padding: 8px 25px;
+        font-size: 18px;
+        border-radius: 50px;
+    }
 }
 
 
 @media (max-width: 510px) {
+    .logo-menu a {
+        padding: 8px 20px;
+        font-size: 16px;
+        border-radius: 50px;
+    }
+
     .como-funciona div {
         width: 300px;
         height: 171px;
@@ -167,28 +186,33 @@
         max-width: 300px;
     }
 
-     .quero-conhecer a {
-        margin-bottom: 50px;
- 
-    }
-    
     .fazendo{
         text-align: center;
     }
 
     .fazendo-item{
         font-size: 16px;
-        margin: 20px 10px 20px 10px;
-        
+
     }
 
     .fazendo-item img{
         float: none;
-        margin: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .fazendo-item p{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        min-width: none;
     }
 
     .lista-de-contatos{
         flex-direction: column;
         align-items: center;
+    }
+
+    .elogio div{
+        padding: 20px;
     }
 }

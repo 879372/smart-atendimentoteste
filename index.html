@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="shortcut icon" href="./src/image/logoico.png" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -105,35 +105,33 @@
     </section>
     <section class="section3">
         <div class="fazendo">
-            <div class="fazendo-container">
-                <h2 class="subtitulo">COMO FAZEMOS</h2>
-                <div class="fazendo-item">
-                    <img src="./src/image/ico5.png" alt="icone" width="80px" height="80px">
-                    <h3>Plataforma Intuitiva</h3>
-                    <p>Tenha uma plataforma simples e intuitiva. Fácil para os clientes encontrarem o que buscam e
-                        prático para o seu dia a dia.</p>
-                </div>
-                <div class="fazendo-item">
-                    <img src="./src/image/ico6.png" alt="icone" width="80px" height="80px">
-                    <h3>Aumente Seu faturamento</h3>
-                    <p> Alcance seus objetivos de atendimento ao cliente, aumente seus lucros e impulsione o crescimento
-                        de sua empresa</p>
-                </div>
-                <div class="fazendo-item">
-                    <img src="./src/image/ico7.png" alt="icone" width="80px" height="80px">
-                    <h3>Gerencie Seu Négocio</h3>
-                    <p>Você terá acesso a uma visão 360 graus de cada contato, histórico de interações, e agendamentos
-                        automáticos;</p>
-                </div>
-                <div class="fazendo-item">
-                    <img src="./src/image/ico8.png" alt="icone" width="80px" height="80px">
-                    <h3>Agilidade no Atendimento</h3>
-                    <p>Utilize ferramentas para deixar o processo mais rápido e aumentar a produtividade.</p>
-                </div>
+            <h2 class="subtitulo">COMO FAZEMOS</h2>
+            <div class="fazendo-item">
+                <img src="./src/image/ico5.png" alt="icone" width="80px" height="80px">
+                <h3>Plataforma Intuitiva</h3>
+                <p>Tenha uma plataforma simples e intuitiva. Fácil para os clientes encontrarem o que buscam e
+                    prático para o seu dia a dia.</p>
             </div>
-            <div class="image-fazendo">
-                <img src="./src/image/image-fazendo.png" alt="notebook">
+            <div class="fazendo-item">
+                <img src="./src/image/ico6.png" alt="icone" width="80px" height="80px">
+                <h3>Aumente Seu faturamento</h3>
+                <p> Alcance seus objetivos de atendimento ao cliente, aumente seus lucros e impulsione o crescimento
+                    de sua empresa</p>
             </div>
+            <div class="fazendo-item">
+                <img src="./src/image/ico7.png" alt="icone" width="80px" height="80px">
+                <h3>Gerencie Seu Négocio</h3>
+                <p>Você terá acesso a uma visão 360 graus de cada contato, histórico de interações, e agendamentos
+                    automáticos;</p>
+            </div>
+            <div class="fazendo-item">
+                <img src="./src/image/ico8.png" alt="icone" width="80px" height="80px">
+                <h3>Agilidade no Atendimento</h3>
+                <p>Utilize ferramentas para deixar o processo mais rápido e aumentar a produtividade.</p>
+            </div>
+        </div>
+        <div class="image-fazendo">
+            <img src="./src/image/image-fazendo.png" alt="notebook">
         </div>
     </section>
     <section class="section4" id="sistema">
@@ -320,15 +318,15 @@
         </ul>
         <div>
             <div class="form-mapa hideen">
-                <form action="get">
+                <form action="https://wa.me/558420400148">
                     <h3>Envie-nos uma mensagem</h3>
-                    <input type="name" class="name" placeholder="Nome*" required>
-                    <input type="email" class="email" placeholder="Email*" required>
-                    <input type="text" class="assunto" placeholder="Assunto" required>
-                    <textarea class="assunto" placeholder="Escreva sua mensagem" id="" cols="30" rows="5"
-                        required></textarea>
-                    <button class="bnt" type="submit">Enviar</button>
-                </form>
+                    <input type="text" name="name" placeholder="Nome*" required class="name">
+                    <input type="email" name="email" placeholder="Email*" required class="email">
+                    <textarea type="text"  name="text" placeholder="Escreva sua mensagem*" id="" cols="30" rows="9"
+                    required class="assunto"></textarea>
+                    <button type="submit" class="bnt">Enviar</button>
+                    <input type="hidden" name="_captcha" value="false">
+               </form>
                 <div class="hideen">
                     <h3>Encontre-nos no Google Maps</h3>
                     <iframe
@@ -339,8 +337,8 @@
         </div>
     </section>
     <footer>
-        <div class="rodape"><img src="./src/image/facebook.png" height="40px" alt="facebook"><img
-                src="./src/image/insta.png" height="40px" alt="instagran"></div>
+        <div class="rodape"><a target="_blank" href="https://www.facebook.com/IdeiaSystemRN/"><img src="./src/image/facebook.png" height="40px" alt="facebook"></a><a target="_blank" href="https://www.instagram.com/ideiasystem/"><img
+                src="./src/image/insta.png" height="40px" alt="instagran"></a></div>
         <p>© 2021 Todos os direitos reservados Smart Atendimento</p>
     </footer>
     <script src="index.js"></script>

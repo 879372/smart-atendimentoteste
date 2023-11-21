@@ -2,18 +2,20 @@
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    min-height: 350px;
+    max-width: 500px;
+    max-height: 500px;
 }
 
 .logo-menu .smart {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .logo-menu img {
-    max-width: 100%;
     margin-bottom: 30px;
-    max-width: 500px;
-    max-width: 500px;
+    width: 100%;
 }
 
 main {
@@ -38,7 +40,7 @@ main img {
 
 .logo-menu {
     min-height: 90px;
-    min-width: 350px;
+    min-width: 50px;
 }
 
 .logo-menu a {
@@ -79,15 +81,21 @@ main img {
 
 .quero-conhecer p {
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .quero-conhecer a {
     border-radius: 20px;
     padding: 11px 20px;
-    background-color: #00bf91;
+    background-color: none;
     font-size: 20px;
-    margin-top: 100px;
+    border: solid 2px #0076c5;
+    color: #0076c5;
+}
+
+.quero-conhecer a:hover {
+    border:solid 2px #00bf91;
+    color: #00bf91;
 }
 
 .imagem-sobre {
@@ -147,27 +155,19 @@ main img {
     align-items: center;
 }
 
-.fazendo {
+.section3{
     display: flex;
     justify-content: center;
-    margin-top: 150px;
-    flex-wrap: wrap;
-    margin: 30px;
+    margin: 50px;
 }
 
 .fazendo-item {
     margin: 15px 0 1px 10px ;
-    width: 100%;
 }
 
 .fazendo-item p{
-    max-width:450px ;
-}
-
-.fazendo .fazendo-cotainer{
-    max-height: 660px;
-    max-width: 450px;
-
+    max-width:450px;
+    min-width:320px;
 }
 
 .fazendo-item img {
@@ -246,15 +246,6 @@ main img {
 
 }
 
-.imagem-sistema li {
-    max-width: 600px;
-    max-height: 600px;
-}
-
-.imagem-sistema li img {
-    max-width: 100%;
-}
-
 .como-funciona {
     display: flex;
     justify-content: center;
@@ -304,6 +295,7 @@ main img {
     border-radius: 10px;
     max-width: 250px;
     margin-bottom: 80px;
+    cursor: pointer;
 }
 
 .planos li:hover {
@@ -375,12 +367,14 @@ main img {
     gap: 15px;
     align-self: center;
     margin: 20px;
+    color: white;
 }
 
 .seta.ativar .resposta {
     display: block;
     background-color: rgb(244, 240, 240);
     padding: 5px;
+    color: #000000;
 }
 
 .seta p {
@@ -492,11 +486,7 @@ main img {
 
 .form-mapa div {
     max-width: 500px;
-    max-height: 375px;
-    margin-bottom: 150px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin: 50px;
+    max-height: 371px;
 }
 
 .form-mapa div iframe {
@@ -507,9 +497,8 @@ main img {
 form {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 350px;
     gap: 5px;
-    margin: 50px;
 }
 
 .name {
@@ -533,7 +522,7 @@ form {
 .bnt {
     padding: 20px;
     background-color: #0076c5;
-    border: none;
+    border: solid 2px;
     border-radius: 5px;
     color: white;
 }
@@ -544,6 +533,7 @@ footer {
     height: 80px;
     background-color: #0076c5;
     align-items: center;
+    margin-top: 100px;
 }
 
 footer div {

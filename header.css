@@ -76,6 +76,11 @@ input:checked~label .hamburguer::after {
     max-height: 200px;
 }
 
+.esconder {
+    background-color: #ffffff;
+    display: flex;
+}
+
 .logo img {
     width: 100%;
 }

@@ -1,3 +1,14 @@
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 700) { // Defina a quantidade de rolagem necessária para mostrar o cabeçalho
+    document.querySelector(".logo").classList.add("esconder")
+    document.querySelector(".header").classList.add("esconder")
+  } else {
+    document.querySelector(".logo").classList.remove("esconder")
+    document.querySelector(".header").classList.remove("esconder")
+  }
+});
+
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.hideen', { duration: 2000 });
 sr.reveal('.logo-menu', { duration: 2500 });
@@ -13,16 +24,6 @@ sr.reveal('.YouTube', { duration: 2000 });
 sr.reveal('.image-fazendo', { duration: 2000 });
 sr.reveal('.image-fazendo', { duration: 2000 });
 sr.reveal('.image-fazendo', { duration: 2000 });
-
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 700) {
-    document.querySelector(".logo").style.display = "flex"
-    document.querySelector(".header").classList.add("esconder")
-  } else {
-    document.querySelector(".logo").style.display = "none"
-    document.querySelector(".header").classList.remove("esconder")
-  }
-});
 
 let currentIndex = 0;
 

@@ -26,8 +26,3 @@ a {
 .active {
     opacity: 1;
 }
-
-.esconder {
-    background-color: #ffffff;
-    display: flex;
-}
